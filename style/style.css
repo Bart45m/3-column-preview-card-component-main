@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+#layout{
+    border-radius: 10px;
+}
+
+#sedan{
+    background-color: rgba(226,133,37,255);
+}
+
+#sedan > .car-description > button {
+    color: rgba(226,133,37,255);
+}
+
+#suv{
+    background-color: rgba(1,105,114,255);
+}
+
+#suv > .car-description > button {
+    color: rgba(1,105,114,255);
+}
+
+#luxury{
+    background-color: rgba(0,64,63,255);
+}
+
+#luxury > .car-description > button {
+    color: rgba(0,64,63,255);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+button{
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.car-description {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 50;
+}
+
+button {
+    border-radius: 20px;
+    padding: 5% 10%;
+}
+
+@media only screen and (orientation: portrait) {
+
+    #layout{
+        width: 90%;
+        margin: 15% auto;
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    .car-description{
+        padding: 10%;
+    }
+
+    #sedan{
+        border-radius: 10px 10px 0 0;
+    }
+
+    #luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    
+    #layout{
+        width: 70%;
+        margin: 10% auto;
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .car-description{
+        padding: 15%;
+    }
+
+    #sedan{
+        border-radius: 10px 0 0 10px;
+    }
+
+    #luxury{
+        border-radius: 0 10px 10px 0;
+    }
+
+    button{
+        margin: 10% auto;
+    }
+}
